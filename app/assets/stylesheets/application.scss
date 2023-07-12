@@ -1,0 +1,22 @@
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome";
+@import "coolborder";
+@import "grid";
+@import "text-color";
+@import "bg-color";
+
+body {
+  background-color: #000000;
+}
+
+.pri-font{
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.sec-font{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fontsize-tech{
+  font-size: 1.5rem;
+}
