@@ -26,6 +26,17 @@
 
 @media (max-width: 480px) {
   .grid {
-    grid-template-columns: 1fr;
+    // grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .layout {
+    flex-wrap: wrap;
+
+    .text {
+      margin-right: 3rem;
+      margin-top: 3rem;
+    }
   }
 }
