@@ -4,6 +4,12 @@
 //   grid-column-gap: 10px;
 //   justify-items: center;
 // }
+.home_video {
+  .home_video {
+    object-fit: contain;
+  }
+
+ }
 
 .grid {
   display: grid;
@@ -38,5 +44,13 @@
       margin-right: 3rem;
       margin-top: 3rem;
     }
+  }
+
+  .nomore {
+    flex-wrap: wrap;
+  }
+
+  .nomore2 {
+    margin-bottom: 5rem;
   }
 }
