@@ -105,7 +105,6 @@
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item carousel-size active">
@@ -114,9 +113,9 @@
           <div class="carousel-item carousel-size">
             <%= image_tag "Spartnerm400.png", alt: "Spartner Image", class: "d-block w-100 carousel-img-size" %>
           </div>
-          <div class="carousel-item carousel-size">
+          <%# <div class="carousel-item carousel-size">
             <%= video_tag "Happyflow.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "home_video" %>
-          </div>
+          <%# </div> %>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -141,4 +140,59 @@
     </div>
   </div>
 
+  <div class='orange mt-5 mb-5 rounded-3 pb-5'>
+    <h1 class='text-center pt-3 pri-font white-text display-3'>Contact Me</h1>
+
+    <div class='d-flex flex-row justify-content-evenly nomore-3'>
+      <div class='d-flex flex-column align-self-center gap-3'>
+        <div class='white black-text pri-font w-100 py-4 px-4 text-start rounded-4'>
+          <i class="fa-brands fa-square-whatsapp fa-lg"></i>
+          <div>Whatsapp</div>
+          <div>+6582081988</div>
+          <%= link_to "Whatsapp me", "https://wa.link/7la13y", target: "_blank", class: "text-decoration-none orange-text" %>
+        </div>
+
+        <div class='white black-text pri-font w-100 py-4 px-4 text-start rounded-4'>
+          <i class="fa-solid fa-envelope fa-lg"></i>
+          <div>Email</div>
+          <div>Shijielim@gmail.com</div>
+          <a href="mailto:shijielim@gmail.com" target="_blank" rel="noopener noreferrer" class="text-decoration-none orange-text">Send a message</a>
+        </div>
+
+      </div>
+
+      <div class='col-6 nomore-4'>
+        <form action="mailto:shijielim@gmail.com" method="post" enctype="text/plain">
+            <div class="mb-3">
+                <label for="exampleInputName" class="form-label black-text-bold sec-font">Name</label>
+                <input type="text" class="form-control" id="exampleInputName" name="name">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label black-text-bold sec-font">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputMessage" class="form-label black-text-bold sec-font">Message</label>
+                <textarea class="form-control" id="exampleInputMessage" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary white black-text-bold sec-font border-0">Submit</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class='footer orange'>
+<div class='pri-font display-4 white-text text-center pt-3'>Shawn Lim</div>
+<div class="d-flex flex-row justify-content-center gap-3 text-white pt-2">
+  <div>
+  <%= link_to "", "https://www.linkedin.com/in/shi-jie/", target: "_blank", class: "fa-brands fa-linkedin fa-2xl text-decoration-none text-white" %>
+  </div>
+  <div>
+    <%= link_to "", "https://github.com/ShiJieCodes", target: "_blank", class: "fa-brands fa-square-github fa-2xl text-decoration-none text-white" %>
+  </div>
+</div>
+<div class='sec-font white-text text-center pt-3'>© All rights reserved.</div>
 </div>
